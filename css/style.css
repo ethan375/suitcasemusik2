@@ -1,3 +1,14 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+img {
+  object-fit: cover;
+  display: block; }
+
 #body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -51,7 +62,8 @@
     grid-column: 2/4;
     grid-row: 1/2;
     justify-self: center;
-    align-self: center; }
+    align-self: center;
+    font-size: 120%; }
   .header__button {
     justify-self: center;
     align-self: center;
@@ -67,7 +79,7 @@
   grid-column: 2/3;
   justify-self: center;
   align-self: center;
-  margin-right: -150px; }
+  margin-right: -85px; }
 
 .welcome {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/au okee3.jpg");
@@ -147,17 +159,6 @@
 
 #everbar {
   height: 200px; }
-
-#cgd {
-  height: 150px; }
-
-#disprint {
-  height: 150px; }
-
-footer {
-  grid-row: 6/7;
-  background-color: blue; }
-t: 200px; }
 
 #cgd {
   height: 150px; }
