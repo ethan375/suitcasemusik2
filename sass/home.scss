@@ -1,6 +1,5 @@
 #body {
     display: grid;
-    height: 1000px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 2fr 1fr 5fr 4fr;
 }
@@ -50,6 +49,11 @@
     height: 100px;
 }
 
+
+
+
+
+
 .header {
     grid-column: 1/-1;
     grid-row: 1/2;
@@ -75,17 +79,26 @@
     &__button {
         justify-self: center;
         align-self: center;
+        border-radius: 10px;
+        background-color: rgb(255,139,0);
+        color: black;
+        height: 50px;
+        width: 200px;
     }
 }
 
 #email__icon {
     height: 25px;
-    margin-right: 5px;
-    margin-top: 5px;
+    grid-row: 1/2;
+    grid-column:2/3;
+    justify-self: center;
+    align-self: center;
+    margin-right: -150px;
 }
 
 .welcome {
     background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url('../img/au okee3.jpg');
+    background-repeat: round;
     grid-row: 3/5;
     grid-column: 1/-1;
     display: grid;
@@ -121,4 +134,92 @@
         font-size: 150px;
     }
 
+}
+
+.sponsors {
+    grid-row: 5/6;
+    grid-column: 1/-1;
+
+    display: grid;
+    gap: 100px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr 2fr 3fr 3fr;
+
+
+    &__header {
+        grid-row: 2/3;
+        grid-column: 1/-1;
+        justify-self: center;
+        align-self: start;
+        color: lightslategray;
+        font-size: 50px;
+    }
+
+
+    &__top {
+        grid-row:3/4;
+    }
+
+    &__bottom {
+        grid-row:4/5;
+    }
+
+    &__everbar{
+        grid-column: 2/4;
+        justify-self: center;
+        align-self: center;
+    }
+    
+    &__infsol{
+        grid-column: 4/6;
+        justify-self: center;
+        align-self: center;
+    }
+
+    &__cgd{
+        grid-column: 2/4;
+        justify-self: start;
+        align-self: center;
+    }
+
+    &__mntinsp {
+        grid-column: 3/5;
+        justify-self: center;
+        align-self: center;
+        margin-left: -100px;
+    }
+
+    &__disprint {
+        grid-column: 4/6;
+        justify-self: end;
+        align-self: center;
+    }
+}
+
+#mntinsp {
+    height: 150px;
+}
+
+#infsol {
+    height: 200px;
+}
+
+#everbar {
+    height: 200px;
+}
+
+#cgd {
+    height: 150px;
+}
+
+#disprint{
+    height: 150px;
+}
+
+
+
+
+footer{
+    grid-row: 6/7;
+        background-color: blue;
 }
