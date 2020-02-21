@@ -142,13 +142,13 @@ img {
     justify-self: start;
     align-self: center; }
   .sponsors__mntinsp {
-    grid-column: 3/5;
+    grid-column: 2/4;
     justify-self: center;
     align-self: center;
     margin-left: -100px; }
   .sponsors__disprint {
     grid-column: 4/6;
-    justify-self: end;
+    justify-self: center;
     align-self: center; }
 
 #mntinsp {
