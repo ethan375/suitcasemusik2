@@ -171,6 +171,8 @@ footer {
   background-color: blue; }
 
 .contact {
+  grid-row: 3/4;
+  grid-column: 1/-1;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr); }
