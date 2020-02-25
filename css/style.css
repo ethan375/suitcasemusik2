@@ -309,3 +309,12 @@ footer {
     height: 125px; }
   #disprint {
     height: 90px; } }
+
+.store {
+  grid-column: 1/-1;
+  grid-row: 3/4;
+  justify-self: center;
+  align-self: center; }
+
+#store__logo {
+  height: 600px; }
