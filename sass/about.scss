@@ -1,0 +1,25 @@
+#about {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 2fr 1fr 6fr;
+}
+
+.about {
+    grid-column: 1/-1;
+    grid-row: 3/4;
+    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),url('../img/loveland pass-resize.JPG');
+    background-repeat: round;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+
+
+    &__decoration::before{
+        content: "-";
+        width: 5px;
+        top: .7em;
+        border-bottom-width: 2px;
+        margin-right: 10px;
+    }
+}
