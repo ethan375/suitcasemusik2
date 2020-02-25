@@ -12,7 +12,7 @@
 // window.onscroll = determineSticky
 
 function contactUs() {
-    location.replace('http://www.zeroequalsoneequalsinfinity/contact.html')
+    location.replace('http://www.zeroequalsoneequalsinfinity.org/contact.html')
 }
 
 
