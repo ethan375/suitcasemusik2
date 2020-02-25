@@ -211,3 +211,50 @@ footer {
     top: .7em;
     border-bottom-width: 2px;
     margin-right: 10px; }
+
+@media only screen and (max-width: 600px) {
+  #body {
+    grid-template-columns: 100%;
+    grid-template-rows: 2fr 1fr 5fr 4fr; }
+  .header {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+    align-content: center; }
+    .header__logo {
+      grid-row: 1/2;
+      grid-column: 1/2; }
+    .header__email {
+      grid-row: 2/3;
+      grid-column: 1/2;
+      margin-left: 20px; }
+    .header__button {
+      grid-row: 3/4;
+      grid-column: 1/2; }
+  #email__icon {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    align-self: center;
+    justify-self: start;
+    margin-left: 80px; }
+  .nav {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(4, 1fr); }
+    .nav__1 {
+      grid-column: 1/2;
+      grid-row: 1/2; }
+    .nav__2 {
+      grid-column: 1/2;
+      grid-row: 2/3; }
+    .nav__3 {
+      grid-column: 1/2;
+      grid-row: 3/4; }
+    .nav__4 {
+      grid-column: 1/2;
+      grid-row: 4/5; } }
