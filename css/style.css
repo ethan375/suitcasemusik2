@@ -10,8 +10,7 @@ img {
   display: block; }
 
 html {
-  scroll-behavior: smooth;
-  box-sizing: border-box; }
+  scroll-behavior: smooth; }
 
 #body {
   display: grid;
