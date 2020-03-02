@@ -11,7 +11,7 @@
 
 // window.onscroll = determineSticky
 
-underDev()
+// underDev()
 
 function contactUs() {
     location.replace('http://www.zeroequalsoneequalsinfinity.org/contact.html')
@@ -50,4 +50,32 @@ let sendEmail = (emailContent) => {
         },
         data: emailContent
     }).then(res => console.log(res))
+}
+
+
+let cryptos = document.getElementsByClassName('crypto_icon');
+
+for(let i = 0; i < cryptos.length; i++) {
+    cryptos[i].addEventListener('click', () => {
+        determineCrypto(cryptos[i]);
+    })
+}
+
+function determineCrypto(crypto) {
+    let value = crypto.innerText
+    
+    if(value == " Bitcoin") {
+        createModal("bitcoin");
+    } else if(value == " Ethereum") {
+        createModal("ethereum");
+    } else if(value == " XRP") {
+        createModal("xrp");        
+    }
+
+}
+
+
+function createModal(crypto) {
+    let modal = document.createElement('div');
+    modal.classList.push('modal');
 }
