@@ -11,8 +11,15 @@
 
 // window.onscroll = determineSticky
 
+underDev()
+
 function contactUs() {
     location.replace('http://www.zeroequalsoneequalsinfinity.org/contact.html')
+}
+
+
+function underDev() {
+    alert("This website is currently under development! some of the features may not work or look production ready. Please bare with us!")
 }
 
 
