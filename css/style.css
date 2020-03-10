@@ -316,7 +316,7 @@ footer {
 @media only screen and (max-width: 600px) {
   #body {
     grid-template-columns: 100%;
-    grid-template-rows: 2fr 1fr 2fr 4fr; }
+    grid-template-rows: 2fr 1fr 2fr 4fr 3fr; }
   .header {
     grid-column: 1/2;
     grid-row: 1/2;
@@ -410,6 +410,31 @@ footer {
     height: 125px; }
   #disprint {
     height: 90px; } }
+
+footer {
+  grid-column: 1/2;
+  grid-row: 5/6;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(3, 1fr); }
+
+.social {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  justify-self: start;
+  margin-left: 25%; }
+
+.support_us {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  justify-self: start;
+  margin-left: 25%; }
+
+.crypto {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  justify-self: start;
+  margin-left: 25%; }
 
 .store {
   grid-column: 1/-1;
