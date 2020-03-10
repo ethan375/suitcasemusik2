@@ -1,4 +1,4 @@
-underDev()
+// underDev()
 
 function contactUs() {
     location.replace('http://www.zeroequalsoneequalsinfinity.org/contact.html')
