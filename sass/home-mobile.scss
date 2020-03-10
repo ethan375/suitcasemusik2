@@ -153,35 +153,36 @@
     #disprint {
         height: 90px;
     }
-}
 
 
-footer{
-    grid-column: 1/2;
-    grid-row: 5/6;
 
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(3, 1fr);
-}
+    footer{
+        grid-column: 1/2;
+        grid-row: 5/6;
 
-.social {
-    grid-column: 1/2;
-    grid-row: 1/2;
-    justify-self: start;
-    margin-left: 25%;
-}
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(3, 1fr);
+    }
 
-.support_us {
-    grid-column: 1/2;
-    grid-row: 2/3;
-    justify-self: start;
-    margin-left: 25%;
-}
+    .social {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        justify-self: start;
+        margin-left: 25%;
+    }
 
-.crypto {
-    grid-column: 1/2;
-    grid-row: 3/4;
-    justify-self: start;
-    margin-left: 25%;
+    .support_us {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        justify-self: start;
+        margin-left: 25%;
+    }
+
+    .crypto {
+        grid-column: 1/2;
+        grid-row: 3/4;
+        justify-self: start;
+        margin-left: 25%;
+    }
 }
