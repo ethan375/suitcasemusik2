@@ -1,16 +1,3 @@
-// const navBar = document.getElementById('nav');
-// let sticky = navBar.offsetTop;
-
-// let determineSticky = () => {
-//     if(window.pageYOffset >= sticky) {
-//         navBar.classList.add('nav__sticky');
-//     } else {
-//         navBar.classList.remove('nav__sticky')
-//     }
-// }
-
-// window.onscroll = determineSticky
-
 // underDev()
 
 function contactUs() {
@@ -77,5 +64,45 @@ function determineCrypto(crypto) {
 
 function createModal(crypto) {
     let modal = document.createElement('div');
-    modal.classList.push('modal');
+    let image = document.createElement('img');
+    let account = document.createElement('p');
+    let close = document.createElement('span');
+    close.innerHTML = '&times';
+    close.classList.add("close")
+
+    if(crypto == 'bitcoin') {
+        image.src = "../img/crypto-qr/bitcoin.png";
+        account.innerHTML = "1Kkxe4AC2Yg81DJjJDiYh5wAxcPTBu7t3C";
+    } else if(crypto == 'ethereum') {
+        image.src = '../img/crypto-qr/etherium.png';
+        account.innerHTML = '0xC418AD6Df786Bd829FB87760104081764445d606';
+    } else if(crypto == 'xrp') {
+        image.src = '../img/crypto-qr/xrp.png';
+        account.innerHTML = 'rnRH89r5xK8GCmvEzQyeeLcchg8LorAkrg';
+    }
+    modal.classList.add('modal-show');
+
+    modal.appendChild(image);
+    modal.appendChild(account);
+    modal.appendChild(close)
+    document.getElementsByTagName("body")[0].appendChild(modal);
+
+    let closeModal = document.getElementsByClassName('close')
+
+    for(let i = 0; i < closeModal.length; i++) {
+        closeModal[i].addEventListener('click', hideModal)
+    }
+}
+
+function hideModal() {
+    let body = document.getElementsByTagName("body")[0];
+    let modal = document.getElementsByClassName('modal-show');
+
+    if (modal.length > 1) {
+        for(let i = 0; i < modal.length; i++) {
+            body.removeChild(modal[i])
+        }
+    } else {
+        body.removeChild(modal[0])
+    }
 }

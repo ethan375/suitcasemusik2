@@ -1,0 +1,25 @@
+.modal-show {
+    z-index: 2;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    word-wrap: break-word;
+    padding: 1rem 1.5rem;
+    width: 24rem;
+    border-radius: 0.5rem; 
+    background-color: lightslategray;
+    font-size: 25px;
+}
+
+.modal-show > span {
+    top: 15px;
+    right: 15px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.modal-hidden {
+    display: none;
+}

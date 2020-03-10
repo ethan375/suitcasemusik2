@@ -210,6 +210,9 @@ footer {
   display: inline;
   height: 25px; }
 
+.crypto_icon {
+  cursor: pointer; }
+
 .contact {
   grid-row: 3/4;
   grid-column: 1/-1;
@@ -235,7 +238,7 @@ footer {
 .about {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 2fr 1fr 6fr 5fr; }
+  grid-template-rows: .7fr .65fr 3fr 4fr .5fr; }
   .about__header {
     grid-column: 1/-1;
     grid-row: 3/4;
@@ -273,7 +276,42 @@ footer {
       color: white; }
   .about__us {
     grid-row: 4/5;
-    grid-column: 1/-1; }
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr); }
+    .about__us__story {
+      grid-column: 1/3;
+      grid-row: 2/-1;
+      width: 60%;
+      justify-self: center; }
+      .about__us__story__header {
+        margin: 30px 25%;
+        font-size: 50px;
+        color: lightslategray; }
+      .about__us__story__hr {
+        width: 50%;
+        margin: 25px 24%;
+        margin-top: -15px; }
+      .about__us__story__text {
+        font-size: 30px; }
+    .about__us__anyone {
+      grid-column: 3/5;
+      grid-row: 2/-1;
+      width: 60%;
+      justify-self: center; }
+      .about__us__anyone__header {
+        width: 100%;
+        margin: 30px;
+        font-size: 50px;
+        color: lightslategray; }
+      .about__us__anyone__hr {
+        width: 90%;
+        margin-bottom: 25px;
+        margin-right: -20px;
+        margin-top: -15px; }
+      .about__us__anyone__text {
+        font-size: 30px; }
 
 @media only screen and (max-width: 600px) {
   #body {
@@ -381,3 +419,26 @@ footer {
 
 #store__logo {
   height: 600px; }
+
+.modal-show {
+  z-index: 2;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  word-wrap: break-word;
+  padding: 1rem 1.5rem;
+  width: 24rem;
+  border-radius: 0.5rem;
+  background-color: lightslategray;
+  font-size: 25px; }
+
+.modal-show > span {
+  top: 15px;
+  right: 15px;
+  position: absolute;
+  cursor: pointer; }
+
+.modal-hidden {
+  display: none; }
